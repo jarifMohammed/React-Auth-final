@@ -1,0 +1,278 @@
+{
+  "status": true,
+  "data": [
+    {
+      "_id": "1",
+      "category_id": "01",
+      "rating": {
+        "number": 4.8,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/woman-recording-podcast-at-mic.jpg",
+      "details": "Personalized advice to help you achieve your career goals. Discuss challenges and receive actionable plans tailored to your aspirations.",
+      "price": "$50",
+      "duration": "1 hour",
+      "dateTime": "2024-12-05T17:00:00",
+      "counselor": {
+        "name": "Dr. Jane Smith",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/woman-recording-podcast-at-mic.jpg",
+        "experience": "10 years",
+        "specialization": "Career transitions, job market insights"
+      },
+      "reviews": [
+        { "user": "Emily Johnson", "comment": "Insightful session!", "rating": 5 },
+        { "user": "Michael Lee", "comment": "Very helpful guidance.", "rating": 4.5 }
+      ],
+      "tags": ["Career Advice", "Online", "Personalized Guidance"],
+      "learnMoreLink": "/service/1"
+    },
+    {
+      "_id": "2",
+      "category_id": "02",
+      "rating": {
+        "number": 4.7,
+        "badge": "Very Good"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/woman-in-front-of-laptop.jpg",
+      "details": "Receive expert advice on resume building. Tailored feedback to help you get noticed by top employers.",
+      "price": "$40",
+      "duration": "45 minutes",
+      "dateTime": "2024-12-06T10:00:00",
+      "counselor": {
+        "name": "John Doe",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/woman-in-front-of-laptop.jpg",
+        "experience": "8 years",
+        "specialization": "Resume optimization, job application strategy"
+      },
+      "reviews": [
+        { "user": "Sarah White", "comment": "My resume looks so much better now!", "rating": 5 },
+        { "user": "Emily Carter", "comment": "Good session, but could use more depth.", "rating": 4 }
+      ],
+      "tags": ["Resume Review", "Career Help", "Offline"],
+      "learnMoreLink": "/service/2"
+    },
+    {
+      "_id": "3",
+      "category_id": "01",
+      "rating": {
+        "number": 4.9,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/career-counseling-session.jpg",
+      "details": "Guidance for those transitioning to new industries. Get personalized tips for shifting to a new career path.",
+      "price": "$75",
+      "duration": "1 hour 30 minutes",
+      "dateTime": "2024-12-07T13:00:00",
+      "counselor": {
+        "name": "Alice Johnson",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/career-counseling-session.jpg",
+        "experience": "12 years",
+        "specialization": "Career transition, job market navigation"
+      },
+      "reviews": [
+        { "user": "Robert Green", "comment": "The best advice I’ve received for switching careers.", "rating": 5 },
+        { "user": "Mark Thompson", "comment": "Very helpful and detailed.", "rating": 4.7 }
+      ],
+      "tags": ["Career Transition", "Personalized Guidance", "Online"],
+      "learnMoreLink": "/service/3"
+    },
+    {
+      "_id": "4",
+      "category_id": "01",
+      "rating": {
+        "number": 4.6,
+        "badge": "Good"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/business-coaching.jpg",
+      "details": "One-on-one coaching to help you become a better leader. Tackle challenges and increase your team's productivity.",
+      "price": "$100",
+      "duration": "2 hours",
+      "dateTime": "2024-12-08T15:00:00",
+      "counselor": {
+        "name": "Dr. George Martin",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/business-coaching.jpg",
+        "experience": "20 years",
+        "specialization": "Leadership development, team building"
+      },
+      "reviews": [
+        { "user": "Linda Moore", "comment": "Helped me manage my team better.", "rating": 4.5 },
+        { "user": "Patricia Scott", "comment": "Great session but a bit too expensive.", "rating": 4 }
+      ],
+      "tags": ["Leadership Coaching", "Business", "Online"],
+      "learnMoreLink": "/service/4"
+    },
+    {
+      "_id": "5",
+      "category_id": "01",
+      "rating": {
+        "number": 4.8,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/entrepreneurship-coaching.jpg",
+      "details": "Get insights and advice for starting and growing your business. Receive actionable tips from an expert entrepreneur.",
+      "price": "$120",
+      "duration": "2 hours",
+      "dateTime": "2024-12-09T11:00:00",
+      "counselor": {
+        "name": "Laura Williams",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/entrepreneurship-coaching.jpg",
+        "experience": "15 years",
+        "specialization": "Entrepreneurship, startup growth"
+      },
+      "reviews": [
+        { "user": "David Hill", "comment": "Invaluable insights on how to grow my business.", "rating": 5 },
+        { "user": "Jessica Allen", "comment": "Very helpful, but the price is high.", "rating": 4.8 }
+      ],
+      "tags": ["Entrepreneurship", "Business Growth", "Online"],
+      "learnMoreLink": "/service/5"
+    },
+    {
+      "_id": "6",
+      "category_id": "02",
+      "rating": {
+        "number": 4.5,
+        "badge": "Very Good"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/goal-setting.jpg",
+      "details": "Learn how to set and achieve your personal and professional goals. Get the tools you need for success.",
+      "price": "$40",
+      "duration": "1 hour",
+      "dateTime": "2024-12-10T09:00:00",
+      "counselor": {
+        "name": "Sophia Turner",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/goal-setting.jpg",
+        "experience": "7 years",
+        "specialization": "Personal development, goal setting"
+      },
+      "reviews": [
+        { "user": "Nancy Rogers", "comment": "Helped me stay on track with my goals.", "rating": 4.7 },
+        { "user": "Alice Brown", "comment": "Very good tips, but not enough depth.", "rating": 4.3 }
+      ],
+      "tags": ["Goal Setting", "Personal Growth", "Offline"],
+      "learnMoreLink": "/service/6"
+    },
+    {
+      "_id": "7",
+      "category_id": "02",
+      "rating": {
+        "number": 4.9,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+      "details": "Master leadership skills and learn how to inspire and motivate your team for better results.",
+      "price": "$150",
+      "duration": "3 hours",
+      "dateTime": "2024-12-11T13:00:00",
+      "counselor": {
+        "name": "Robert Davis",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+        "experience": "18 years",
+        "specialization": "Leadership, team management"
+      },
+      "reviews": [
+        { "user": "Michael Harris", "comment": "Great training, I feel more confident leading.", "rating": 5 },
+        { "user": "Daniel Lee", "comment": "Worth the investment.", "rating": 4.9 }
+      ],
+      "tags": ["Leadership", "Team Building", "Offline"],
+      "learnMoreLink": "/service/7"
+    },
+    {
+      "_id": "8",
+      "category_id": "02",
+      "rating": {
+        "number": 4.9,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+      "details": "Master leadership skills and learn how to inspire and motivate your team for better results.",
+      "price": "$150",
+      "duration": "3 hours",
+      "dateTime": "2024-12-11T13:00:00",
+      "counselor": {
+        "name": "Robert Davis",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+        "experience": "18 years",
+        "specialization": "Leadership, team management"
+      },
+      "reviews": [
+        { "user": "Michael Harris", "comment": "Great training, I feel more confident leading.", "rating": 5 },
+        { "user": "Daniel Lee", "comment": "Worth the investment.", "rating": 4.9 }
+      ],
+      "tags": ["Leadership", "Team Building", "Offline"],
+      "learnMoreLink": "/service/7"
+    },
+    {
+      "_id": "9",
+      "category_id": "02",
+      "rating": {
+        "number": 4.9,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+      "details": "Master leadership skills and learn how to inspire and motivate your team for better results.",
+      "price": "$150",
+      "duration": "3 hours",
+      "dateTime": "2024-12-11T13:00:00",
+      "counselor": {
+        "name": "Robert Davis",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+        "experience": "18 years",
+        "specialization": "Leadership, team management"
+      },
+      "reviews": [
+        { "user": "Michael Harris", "comment": "Great training, I feel more confident leading.", "rating": 5 },
+        { "user": "Daniel Lee", "comment": "Worth the investment.", "rating": 4.9 }
+      ],
+      "tags": ["Leadership", "Team Building", "Offline"],
+      "learnMoreLink": "/service/7"
+    },{
+      "_id": "10",
+      "category_id": "01",
+      "rating": {
+        "number": 4.9,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+      "details": "Master leadership skills and learn how to inspire and motivate your team for better results.",
+      "price": "$150",
+      "duration": "3 hours",
+      "dateTime": "2024-12-11T13:00:00",
+      "counselor": {
+        "name": "Robert Davis",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+        "experience": "18 years",
+        "specialization": "Leadership, team management"
+      },
+      "reviews": [
+        { "user": "Michael Harris", "comment": "Great training, I feel more confident leading.", "rating": 5 },
+        { "user": "Daniel Lee", "comment": "Worth the investment.", "rating": 4.9 }
+      ],
+      "tags": ["Leadership", "Team Building", "Online"],
+      "learnMoreLink": "/service/7"
+    },{
+      "_id": "11",
+      "category_id": "01",
+      "rating": {
+        "number": 4.9,
+        "badge": "Excellent"
+      },
+      "image_url": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+      "details": "Master leadership skills and learn how to inspire and motivate your team for better results.",
+      "price": "$150",
+      "duration": "3 hours",
+      "dateTime": "2024-12-11T13:00:00",
+      "counselor": {
+        "name": "Robert Davis",
+        "profileImage": "https://i.ibb.co.com/WD72sJh/leadership-training.jpg",
+        "experience": "18 years",
+        "specialization": "Leadership, team management"
+      },
+      "reviews": [
+        { "user": "Michael Harris", "comment": "Great training, I feel more confident leading.", "rating": 5 },
+        { "user": "Daniel Lee", "comment": "Worth the investment.", "rating": 4.9 }
+      ],
+      "tags": ["Leadership", "Team Building", "Online"],
+      "learnMoreLink": "/service/7"
+    }
+  ]
+}
