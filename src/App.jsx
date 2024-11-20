@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "./App.css"; // Import the updated styles
+import { FreeMode, Pagination } from "swiper/modules";
 
+const testimonials = [
+  {
+    name: "Alice Johnson",
+    feedback: "This service is amazing! Highly recommended.",
+    image: "https://i.ibb.co.com/nMtfz3K/pexels-olly-3756679.jpg",
+  },
+  {
+    name: "Bob Smith",
+    feedback: "I had a fantastic experience using this platform.",
+    image: "https://i.ibb.co.com/nMtfz3K/pexels-olly-3756679.jpg",
+  },
+  {
+    name: "Charlie Brown",
+    feedback: "Exceptional support and user-friendly design.",
+    image: "https://i.ibb.co.com/nMtfz3K/pexels-olly-3756679.jpg",
+  },
+  {
+    name: "Diana Ross",
+    feedback: "Loved it! Will definitely use again.",
+    image: "https://i.ibb.co.com/nMtfz3K/pexels-olly-3756679.jpg",
+  },
+  {
+    name: "Evan Taylor",
+    feedback: "Great value for money. Highly satisfied!",
+    image: "https://i.ibb.co.com/nMtfz3K/pexels-olly-3756679.jpg",
+  },
+];
+
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={20}
+        breakpoints={{
+          // Adjust the number of visible slides for different screen sizes
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
+      >
+        {testimonials.map((testimonial, index) => (
+          <SwiperSlide key={index}>
+            <div className="testimonial-card">
+              <img src={testimonial.image} alt={`${testimonial.name}'s avatar`} />
+              <h3>{testimonial.name}</h3>
+              <p>{testimonial.feedback}</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 }
-
-export default App

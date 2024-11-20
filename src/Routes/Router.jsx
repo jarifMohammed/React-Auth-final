@@ -2,6 +2,16 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import HomeLayout from "../Layouts/HomeLayout";
 import Mentors from "../Pages/Mentors";
 import Details from "../Pages/Details";
+import AuthLayout from "../Layouts/AuthLayout";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
+import PrivateRoute from "./PrivateRoute";
+
+import Profile from "../Pages/Profile";
+import BecomeMentor from "../Pages/BecomeMentor";
+import ForgotPassword from "../Pages/ForgotPassword";
+import Services from "../Pages/Services";
+import Page from "../Pages/Page";
 
 
 
@@ -21,7 +31,7 @@ const Router = createBrowserRouter([
         path: "/mentorList/:id",
         element: <Mentors></Mentors>,
         loader: async ({ params }) => {
-          const res = await fetch(`/public/mentor.json`);
+          const res = await fetch(`/mentor.json`);
           const data = await res.json();
 
           let mentors;
@@ -41,19 +51,15 @@ const Router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/services",
-    element: <h2>Services</h2>,
-  },
-  {
-    path: "/profile",
-    element: <h2>my profile</h2>,
-  },
+  
+  
   {
     path: "/counselorsDetails/:id",
-    element: <Details></Details> ,
+    element: <PrivateRoute>
+      <Details></Details>
+    </PrivateRoute> ,
     loader: async ({params}) => {
-      const res = await fetch(`/public/mentor.json`);
+      const res = await fetch(`/mentor.json`);
       const data = await res.json();
     
       // Filter mentors that have a valid _id field
@@ -65,11 +71,40 @@ const Router = createBrowserRouter([
 },
   {
     path: "/auth",
-    element: <h2>this auth</h2>,
+    element:<AuthLayout></AuthLayout> ,
+    children:[
+      {
+        path:"/auth/login",
+        element:<Login></Login>
+      },
+      {
+        path:"/auth/register",
+        element:<Register></Register>
+      }
+    ]
+  },
+  {
+    path: "/becomeMentor",
+    element: <PrivateRoute>
+      <BecomeMentor></BecomeMentor>
+    </PrivateRoute>,
+  },
+  {
+    path: "/profile",
+    element: <PrivateRoute>
+      <Profile></Profile>
+    </PrivateRoute>,
+  },{
+  path: "/forgot",
+  element: <ForgotPassword></ForgotPassword>
+},
+  {
+    path: "/services",
+    element: <Services></Services>,
   },
   {
     path: "*",
-    element: <h2>error</h2>,
+    element: <Page></Page>
   },
 ]);
 export default Router;
