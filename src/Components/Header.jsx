@@ -5,7 +5,7 @@ const Header = () => {
     const [category, setCategory] = useState([]);
     
     useEffect(() => {
-        fetch("../../public/mentorCategory.json")
+        fetch("/mentorCategory.json")
             .then((res) => res.json())
             .then((data) => setCategory(data.data.mentor_category));
     }, []);
